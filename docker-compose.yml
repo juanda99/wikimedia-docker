@@ -1,0 +1,36 @@
+version: '2'
+services:
+  db:
+    hostname: db
+    image: mysql:5.5
+    container_name: db
+    volumes:
+      - ./bbdd:/var/lib/mysql
+      - ./db/:/etc/mysql/conf.d
+    extends:
+      file: db-users.yml
+      service: db-users
+    networks:
+      - backend
+  mediawiki:
+    #image: 'bitnami/mediawiki:latest'
+    build:
+      context: ./wiki
+    ports:
+      - '8088:80'
+      - '4438:443'
+#    volumes:
+#      - ./wiki/LocalSettings.php:/usr/share/nginx/html/LocalSettings.php:ro 
+#      - ./wiki/images:/usr/share/nginx/html/images
+#      - ./wiki/extensions:/tmp/extensions
+    depends_on:
+      - db
+    extends:
+      file: db-users.yml
+      service: db-users
+    networks:
+      - backend
+      - frontend
+networks:
+  frontend:
+  backend:
