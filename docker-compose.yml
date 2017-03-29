@@ -13,6 +13,8 @@ services:
     networks:
       - backend
   mediawiki:
+    hostname: mediawiki
+    container_name: mediaWiki
     #image: 'bitnami/mediawiki:latest'
     build:
       context: ./wiki
@@ -31,6 +33,14 @@ services:
     networks:
       - backend
       - frontend
+    environment:
+      MEDIAWIKI_SITE_NAME: MediaWiki
+      MEDIAWIKI_SITE_SERVER: //localhost:8088
+      MEDIAWIKI_SITE_LANG: es
+      MEDIAWIKI_ENABLE_SSL: "false"
+      MEDIAWIKI_UPDATE: "false"
+    volumes:
+      - ./wikidata:/data
 networks:
   frontend:
   backend:
