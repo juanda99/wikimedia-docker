@@ -26,10 +26,9 @@ docker-compose up -d
   ```
   - MEDIA_SITE_SERVER should resolve to localhost and the port should be previously defined in your docker-compose.file (see ports entry).
   - Set mediawiki version
-  ```
-  https://github.com/juanda99/wikimedia-docker/blob/master/wiki/Dockerfile#L41
-  ```
-  By default it installs latest version (```/tmp/get-mediawiki.sh latest```), if we want an specific version we need to rewrite it: ```/tmp/get-mediawiki.sh 1.28 ```
+    - You need to [modify dockerfile](https://github.com/juanda99/wikimedia-docker/blob/master/wiki/Dockerfile#L41)
+    - By default it installs latest version (```/tmp/get-mediawiki.sh latest```), if we want an specific version we need to rewrite it: ```/tmp/get-mediawiki.sh 1.28 ```
+
 - Apache:
   Changing apache specific file: wiki/mediawiki-apache.conf
 
