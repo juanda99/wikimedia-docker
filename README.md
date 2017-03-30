@@ -44,6 +44,7 @@ docker-compose up -d
 - phpmyadmin
 - backups and restores... 
 - ssh access
+- and tests, lots of tests
 
 ##  
   <div align="center">
