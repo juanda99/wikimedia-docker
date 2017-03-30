@@ -1,5 +1,7 @@
 # wikimedia
-WIP!
+- Complete wikimedia deploy environment based on docker.
+- WIP!
+- kudos to [wikimedia](https://github.com/wikimedia/mediawiki-docker) and [gunzi42](https://github.com/gunzi42/mediawiki-docker)
 
 # How to install
 - Clone the repo
