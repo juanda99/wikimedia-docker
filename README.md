@@ -40,6 +40,11 @@ docker-compose up -d
 - Mysql
   - All configuration related to mysql through docker-compose file.  [Read the docs](https://hub.docker.com/_/mysql/)
   
+## TODO
+- phpmyadmin
+- backups and restores... 
+- ssh access
+
 ##  
   <div align="center">
   <sub>Made with ❤︎ by <a href="https://twitter.com/juanda99">juanda</a> for the <a href="https://twitter.com/catedu_es">Catedu team</a></sub>
