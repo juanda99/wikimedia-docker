@@ -7,7 +7,7 @@ WIP!
 git clone git@github.com:juanda99/wikimedia-docker.git  # with ssh keys
 git clone https://github.com/juanda99/wikimedia-docker.git # without ssh keyes
 ```
-- Start the containera
+- Start the containers
 ```
 cd wikimedia-docker
 docker-compose up -d
