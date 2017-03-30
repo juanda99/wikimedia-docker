@@ -40,9 +40,9 @@ docker-compose up -d
 - Mysql
   - All configuration related to mysql through docker-compose file.  [Read the docs](https://hub.docker.com/_/mysql/)
   
-  
+##  
   <div align="center">
-  <sub>Made with ❤︎ by <a href="https://twitter.com/juanda99">juanda</a> for <a href="https://twitter.com/catedu_es">Catedu</a></sub>
+  <sub>Made with ❤︎ by <a href="https://twitter.com/juanda99">juanda</a> for the <a href="https://twitter.com/catedu_es">Catedu team</a></sub>
 </div>
   
   
