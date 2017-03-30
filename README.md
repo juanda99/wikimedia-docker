@@ -33,7 +33,7 @@ docker-compose up -d
   Changing apache specific file: wiki/mediawiki-apache.conf
 
 - PHP:
-  - [Change version:](https://github.com/juanda99/wikimedia-docker/blob/master/wiki/Dockerfile:L1)
+  - [Change version](https://github.com/juanda99/wikimedia-docker/blob/master/wiki/Dockerfile#L1)
   - [Add php extensions:](https://github.com/juanda99/wikimedia-docker/blob/master/wiki/Dockerfile:L18-21) [read the docs](https://hub.docker.com/_/php/)
 - Mysql
   - All configuration related to mysql through docker-compose file.  [Read the docs](https://hub.docker.com/_/mysql/)
